@@ -7,11 +7,11 @@ import './Analytics.css';
 const Analytics = () => {
     const [charts] = useCharts();
     return (
-        <section className='grid lg:grid-cols-2 grid-cols-1 gap-8 my-8'>
+        <section className='grid lg:grid-cols-2 sm:grid-cols-1 gap-8 my-8'>
             {/* chart 1 */}
             <LineChart
-                width={500}
-                height={300}
+                width={350}
+                height={250}
                 data={charts}
             >
                 <CartesianGrid strokeDasharray="3 3" />
@@ -23,8 +23,8 @@ const Analytics = () => {
 
             {/* chart 2 */}
             <AreaChart
-                width={500}
-                height={300}
+                width={350}
+                height={250}
                 data={charts}
             >
                 <CartesianGrid strokeDasharray="3 3" />
@@ -35,7 +35,7 @@ const Analytics = () => {
             </AreaChart>
 
             {/* chart 3 */}
-            <BarChart width={500} height={300} data={charts}>
+            <BarChart width={350} height={250} data={charts}>
                 <Bar dataKey="sell" fill="#8884d8" />
                 <XAxis dataKey="month" />
                 <Tooltip />
