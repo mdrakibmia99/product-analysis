@@ -9,7 +9,7 @@ function CustomLink({ children, to, ...props }) {
     return (
         <div className='header-item'>
             <Link
-                style={{ color: match ? 'yellow' : 'white', margin: '1rem', borderBottom: match ? '2px solid yellow' : 'none' }}
+                style={{ color: match ? 'yellow' : 'white', margin: '1rem', borderBottom: match ? '2px solid yellow' : '2px solid gray' }}
                 to={to}
                 {...props}
             >
